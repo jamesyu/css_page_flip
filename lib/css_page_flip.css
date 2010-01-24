@@ -1,0 +1,49 @@
+.page {
+    border: 2px solid #ccc;
+    padding: 15px;
+    width: 398px;
+    float: left;
+    height: 500px;
+    cursor: pointer;
+    background: #fff;
+    font-size: 15px;
+    position: absolute;
+    
+    -webkit-backface-visibility: hidden;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform: rotateY(0);
+    -webkit-transform-origin: left;
+    -webkit-transition: 0.5s linear;
+}
+
+ol li .page {
+    z-index: 1;
+}
+
+ol li .page.right_page_next {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transform-origin: right;
+    -webkit-transform: rotateY(180deg);
+}
+
+ol li .page.right_page {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+ol li.current .page.right_page, ol li.current .page.right_page_next {
+    z-index: 1000;
+}
+
+ol li.turn .page.right_page_next {
+    -webkit-transform: rotateY(0);
+}
+
+ol li.turn .page.right_page {
+    -webkit-transform: rotateY(-180deg);
+}
+

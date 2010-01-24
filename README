@@ -1,0 +1,21 @@
+CSS Page Flip v0.1 
+
+This is an open source pure CSS and Javascript 3D Page Flipping framework (which requires Prototype).
+
+It converts this:
+
+<ol id="foo">
+	<li>Page 1</li>
+	<li>Page 2</li>
+	<li>Page 3</li>
+</ol>
+
+Into a page flippable layout using pure CSS3 animations.
+
+This has been tested in Webkit, both in Safari and iPhone.
+
+Simply include all source files under lib, and (for the example above) call:
+
+	new CSSPageFlip('foo');
+
+See the examples directory for more usage details.

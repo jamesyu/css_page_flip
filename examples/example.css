@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 18px;
+    background: #eee;
+}
+
+h1 {
+    margin: 0;
+    font-size: 23px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+#container {
+    width: 862px;
+    margin: 20px auto 20px auto;
+    text-align: left;
+    position: relative;
+}
