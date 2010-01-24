@@ -16,6 +16,6 @@ This has been tested in Webkit, both in Safari and iPhone.
 
 Simply include all source files under lib, and (for the example above) call:
 
-	new CSSPageFlip('foo');
+	CSSPageFlip.init('foo');
 
 See the examples directory for more usage details.
