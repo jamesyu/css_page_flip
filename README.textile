@@ -18,8 +18,8 @@ It converts this:
 
 Into a page flippable layout using pure CSS3 animations. Currently works in Safari and iPhone.
 
-Example in action: http://jamesyu.org/css_page_flip/examples/example.html
-Download the source here: http://jamesyu.org/css_page_flip/lib/css_page_flip.js
+Example in action:  "http://jamesyu.org/css_page_flip/examples/example.html":http://jamesyu.org/css_page_flip/examples/example.html
+Download the source here: "http://jamesyu.org/css_page_flip/lib/css_page_flip.js":http://jamesyu.org/css_page_flip/lib/css_page_flip.js
 
 h2. Usage
 
