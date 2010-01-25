@@ -1,6 +1,10 @@
-CSS Page Flip v0.1 
+h1. CSS Page Flip: a CSS and JS 3D Page Flipper
+
+*Version 0.2 (Jan 2010)*
 
 This is an open source pure CSS and Javascript 3D Page Flipping framework (which requires jQuery)
+
+h2. What does this do?
 
 It converts this:
 
@@ -10,12 +14,12 @@ It converts this:
 	<li>Page 3</li>
 </ol>
 
-Into a page flippable layout using pure CSS3 animations.
+Into a page flippable layout using pure CSS3 animations. Currently works in Safari and iPhone.
 
 Example in action: http://jamesyu.org/css_page_flip/examples/example.html
 Download the source here: http://jamesyu.org/css_page_flip/lib/css_page_flip.js
 
-This has been tested in Webkit, both in Safari and iPhone.
+h2. Usage
 
 Simply include all source files under lib, and (for the example above) call:
 
@@ -25,3 +29,9 @@ You can apply your own styles to each page by targeting "ol li .page". CSSPageFl
 will set the size of the flipping UI to fill the space in the containing element.
 
 See the examples directory for more usage details.
+
+h2. TODO
+
+* AJAX fetching for more pages
+* Better animations
+* Optional controls, zooming, and other goodness
