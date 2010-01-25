@@ -8,11 +8,13 @@ h2. What does this do?
 
 It converts this:
 
+<pre><code>
 <ol id="foo">
 	<li>Page 1</li>
 	<li>Page 2</li>
 	<li>Page 3</li>
 </ol>
+</code></pre>
 
 Into a page flippable layout using pure CSS3 animations. Currently works in Safari and iPhone.
 
@@ -23,7 +25,9 @@ h2. Usage
 
 Simply include all source files under lib, and (for the example above) call:
 
+<pre><code>
 	CSSPageFlip.init('foo');
+</code></pre>
 	
 You can apply your own styles to each page by targeting "ol li .page". CSSPageFlip
 will set the size of the flipping UI to fill the space in the containing element.
