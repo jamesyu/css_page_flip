@@ -13,6 +13,7 @@ It converts this:
 Into a page flippable layout using pure CSS3 animations.
 
 Example in action: http://jamesyu.org/css_page_flip/examples/example.html
+Download the source here: http://jamesyu.org/css_page_flip/lib/css_page_flip.js
 
 This has been tested in Webkit, both in Safari and iPhone.
 
