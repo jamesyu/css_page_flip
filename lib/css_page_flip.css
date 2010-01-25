@@ -1,14 +1,15 @@
-.page {
-    border: 2px solid #ccc;
-    padding: 15px;
-    width: 398px;
+ol li .page {
+    border: 5px solid #ccc;
     float: left;
     height: 500px;
     cursor: pointer;
     background: #fff;
     font-size: 15px;
     position: absolute;
-    
+    padding: 25px;
+}
+
+ol.ready li .page {
     -webkit-backface-visibility: hidden;
     -webkit-animation-direction: alternate;
     -webkit-animation-iteration-count: 1;
@@ -36,10 +37,13 @@ ol li .page.right_page {
     z-index: 1;
 }
 
-ol li.current .page.right_page, ol li.current .page.right_page_next,
-ol li.visible .page.right_page, ol li.visible .page.right_page_next {
+ol li.current .page.right_page, ol li.current .page.right_page_next {
     z-index: 1000;
     visibility: visible;
+}
+
+ol li.current .page.right_page_next {
+    z-index: 999;
 }
 
 ol li.turn .page.right_page_next {
