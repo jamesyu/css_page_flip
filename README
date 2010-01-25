@@ -12,6 +12,8 @@ It converts this:
 
 Into a page flippable layout using pure CSS3 animations.
 
+Example in action: http://jamesyu.org/css_page_flip/examples/example.html
+
 This has been tested in Webkit, both in Safari and iPhone.
 
 Simply include all source files under lib, and (for the example above) call:
