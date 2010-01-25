@@ -1,29 +1,24 @@
-ol li .page {
-    border: 5px solid #ccc;
-    float: left;
-    height: 500px;
+ol._css_page_flip li .page {
     cursor: pointer;
-    background: #fff;
-    font-size: 15px;
     position: absolute;
-    padding: 25px;
-}
-
-ol.ready li .page {
-    -webkit-backface-visibility: hidden;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-iteration-count: 1;
-    -webkit-transform: rotateY(0);
-    -webkit-transform-origin: left;
-    -webkit-transition: 0.5s ease-in;
-}
-
-ol li .page {
     z-index: 1;
     visibility: hidden;
 }
 
-ol li .page.right_page_next {
+ol._css_page_flip.ready li .page {
+    -webkit-backface-visibility: hidden;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transition: 0s ease-in;
+    -webkit-transform-origin: left;
+    -webkit-transform: rotateY(0);
+}
+
+ol._css_page_flip.first_touch li .page { 
+    -webkit-transition: 0.5s ease-in;
+}
+
+ol._css_page_flip.ready li .page.right_page_next {
     top: 0;
     left: 0;
     z-index: 1;
@@ -31,27 +26,27 @@ ol li .page.right_page_next {
     -webkit-transform: rotateY(180deg);
 }
 
-ol li .page.right_page {
+ol._css_page_flip.ready li .page.right_page {
     top: 0;
     right: 0;
     z-index: 1;
 }
 
-ol li.current .page.right_page, ol li.current .page.right_page_next {
+ol._css_page_flip li.current .page.right_page, ol li.current .page.right_page_next {
     z-index: 1000;
     visibility: visible;
 }
 
-ol li.current .page.right_page_next {
+ol._css_page_flip li.current .page.right_page_next {
     z-index: 999;
 }
 
-ol li.turn .page.right_page_next {
+ol._css_page_flip li.turn .page.right_page_next {
     -webkit-transform: rotateY(0);
     visibility: visible;
 }
 
-ol li.turn .page.right_page {
+ol._css_page_flip li.turn .page.right_page {
     -webkit-transform: rotateY(-180deg);
     visibility: visible;
 }

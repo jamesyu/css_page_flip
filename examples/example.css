@@ -16,3 +16,11 @@ h1 {
     text-align: left;
     position: relative;
 }
+
+ol li .page {
+    border: 5px solid #ccc;
+    height: 500px;
+    background: #fff;
+    font-size: 15px;
+    padding: 25px;
+}
