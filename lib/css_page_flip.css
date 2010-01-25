@@ -14,11 +14,12 @@
     -webkit-animation-iteration-count: 1;
     -webkit-transform: rotateY(0);
     -webkit-transform-origin: left;
-    -webkit-transition: 0.5s linear;
+    -webkit-transition: 0.5s ease-in;
 }
 
 ol li .page {
     z-index: 1;
+    visibility: hidden;
 }
 
 ol li .page.right_page_next {
@@ -35,15 +36,19 @@ ol li .page.right_page {
     z-index: 1;
 }
 
-ol li.current .page.right_page, ol li.current .page.right_page_next {
+ol li.current .page.right_page, ol li.current .page.right_page_next,
+ol li.visible .page.right_page, ol li.visible .page.right_page_next {
     z-index: 1000;
+    visibility: visible;
 }
 
 ol li.turn .page.right_page_next {
     -webkit-transform: rotateY(0);
+    visibility: visible;
 }
 
 ol li.turn .page.right_page {
     -webkit-transform: rotateY(-180deg);
+    visibility: visible;
 }
 

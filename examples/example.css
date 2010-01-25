@@ -10,10 +10,6 @@ h1 {
     font-size: 23px;
 }
 
-ol {
-    list-style-type: none;
-}
-
 #container {
     width: 862px;
     margin: 20px auto 20px auto;
